@@ -1,0 +1,52 @@
+HTML {background-color: lightblue}
+H1 {color: maroon}
+OL {color: green}
+IMG {border: 5px solid blue}
+IMG:HOVER {border: 5px solid red}
+IMG {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+p1 {display: block;
+    width: 150px;
+    margin: 60px;
+    padding: 50px 100px 50px 100px;
+    background-color: plum;
+    
+}
+p2 {display: block;
+    width: 150px;
+    margin: 60px;
+    padding: 50px 100px 50px 100px;
+    background-color: plum;
+    
+}
+p3 {display: block;
+    width: 150px;
+    margin: 60px;
+    padding:50px 100px 50px 100px;
+    background-color: plum;
+}
+
+.highlight_01 {background-color: aqua}
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+#gallery img {
+    width: 200px;
+    height: auto;
+    border: 5px solid blue;
+}
+#gallery img:hover {
+    border: 5px solid red;
+}
+.gallerybox {
+    border: 3px solid black;
+    display: block;
+    margin: px;
+    padding: 50px 50px 50px 50px;
+}
