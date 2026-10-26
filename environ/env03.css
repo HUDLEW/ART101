@@ -1,0 +1,67 @@
+body {
+    background-color: forestgreen;
+    background-image: url('./environ-images/rain.gif'), url('./environ-images/redwoods-background.jpg');
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover; 
+    padding: 50px;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+h1{
+    color: rgb(116, 43, 19);
+}
+p1{
+    color: rgb(154, 222, 115);
+}
+img{
+    border-radius: 30px; 
+    background-color: rgb(163, 249, 249);
+    padding: 4px;
+    width: 600px;
+}
+.top{
+    background-color: rgb(181, 100, 73);
+    padding: 20px;
+    border-radius: 10px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 30px;
+    background-color: rgb(163, 249, 249);
+    gap: 20px;
+}
+#tree{
+    width: 100px;
+    background: rgb(181,100,73);
+}
+.buttons{
+
+    margin-top: 15px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #333;
+    border-radius: 8px;
+    max-width: 500px;
+    text-align: center;
+    font-size: 1.1em;
+    color: #222;
+
+}
+
+#output {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #333;
+    border-radius: 8px;
+    max-width: 500px;
+    text-align: center;
+    font-size: 1.1em;
+    color: #222;
+}
+
