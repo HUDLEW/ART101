@@ -30,4 +30,16 @@ $(document).ready(function() {
         $('#output').html('<p><strong>Ants:</strong> Incredibly strong and group oriented. While still being smaller than the rest of the fauna, they are proportionally considerably bigger than they would be outside the terrarium. Their incredible strength allows them to influence their environment to a much greater extent than the rest of the animals. They are able to dig holes for their nests and move branches for more optimal locations for leaves to drop.</p>');
     });
 
+    $('#weather-btn').click(function() {
+    let weather = prompt("sunny, rainy, or snowy?");
+
+    if (weather === "sunny") {
+        $('body').css('background-image', "url('./environ-images/sunny.gif'), url('./environ-images/redwoods-background.jpg')");
+    } else if (weather === "rainy") {
+        $('body').css('background-image', "url('./environ-images/rain.gif'), url('./environ-images/redwoods-background.jpg')");
+    } else if (weather === "snowy") {
+        $('body').css('background-image', "url('./environ-images/snowy.gif'), url('./environ-images/redwoods-background.jpg')");
+    }
+});
+
 });
