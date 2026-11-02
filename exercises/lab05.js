@@ -4,10 +4,11 @@ function askNumber(whatNumber) {
     if (userNumber == whatNumber) {
         $("#output").html("You got it!");
     }
-    else{
+    else {
         $("#output").html("Noooooope");
     }
 }
-$("good-button").click(function() {
+
+$("#good-button").click(function () {
     askNumber(5);
 });
