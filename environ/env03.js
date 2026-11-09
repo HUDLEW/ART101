@@ -31,15 +31,27 @@ $(document).ready(function() {
     });
 
     $('#weather-btn').click(function() {
-    let weather = prompt("sunny, rainy, or snowy?");
+        let weather = prompt("sunny, rainy, or snowy?");
 
-    if (weather === "sunny") {
-        $('body').css('background-image', "url('./environ-images/sunny.gif'), url('./environ-images/redwoods-background.jpg')");
-    } else if (weather === "rainy") {
-        $('body').css('background-image', "url('./environ-images/rain.gif'), url('./environ-images/redwoods-background.jpg')");
-    } else if (weather === "snowy") {
-        $('body').css('background-image', "url('./environ-images/snowy.gif'), url('./environ-images/redwoods-background.jpg')");
-    }
-});
-
+        if (weather === "sunny") {
+            $('body').css('background-image', "url('./environ-images/sunny.gif'), url('./environ-images/redwoods-background.jpg')");
+        } else if (weather === "rainy") {
+            $('body').css('background-image', "url('./environ-images/rain.gif'), url('./environ-images/redwoods-background.jpg')");
+        } else if (weather === "snowy") {
+            $('body').css('background-image', "url('./environ-images/snowy.gif'), url('./environ-images/redwoods-background.jpg')");
+        }
+    });
+    $('#night-btn').click(function() {
+        $('#darkness').fadeToggle(800);
+        if ($(this).text() === 'Night mode') {
+            $(this).text('Day mode');
+        } else {
+            $(this).text('Night mode');
+        }
+    });
+ 
+    $(document).mousemove(function(e) {
+        $('#darkness').css('background',
+            'radial-gradient(circle 140px at ' + e.clientX + 'px ' + e.clientY + 'px, rgba(0,0,0,0) 0%, rgba(5,10,30,0.92) 100%)');
+    });
 });
